@@ -23,7 +23,7 @@
             echo "<div class='alert alert-danger'>E-mail ou senha incorretos!</div>";
     }
     ?>
-    <form action="login.php" method="post">
+    <form action="login2.php" method="post">
         <div class="form-group">
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email" placeholder="exemplo@gmail.com" class="form-control">

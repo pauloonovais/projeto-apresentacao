@@ -35,12 +35,12 @@ class UsuarioDAO extends Conexao
         session_start();
         unset($_SESSION['id']);
         session_destroy();
-        header("Location: login.php");
+        header("Location: login2.php");
     }
     public function verificar()
     {
         session_start();
         if (empty($_SESSION ['id']))
-            header("Location: login.php");
+            header("Location: login2.php");
     }
 }
