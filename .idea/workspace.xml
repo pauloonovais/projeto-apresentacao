@@ -26,44 +26,29 @@
         <entry file="file://$PROJECT_DIR$/view/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entrada.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entrada.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/entrada.php">
 >>>>>>> bde1e6a41924fd3a3e88f6a62e2c039e42da0087
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Model/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsuarioDAO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/DAO/UsuarioDAO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="391">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <marker date="1520898764658" expanded="true" signature="211:321" ph="insert into entrada... " />
 =======
                 <marker date="1520901247139" expanded="true" signature="203:265" ph="select * fro... usuarios" />
 >>>>>>> bde1e6a41924fd3a3e88f6a62e2c039e42da0087
+=======
+                <marker date="1520907110942" expanded="true" signature="1463:1483" ph="..." />
+                <marker date="1520907110942" expanded="true" signature="1652:1672" ph="..." />
+>>>>>>> b46dfbf0d764f9e5353a7d9cd0929fd6dfae68cb
               </folding>
             </state>
           </provider>
@@ -86,8 +71,9 @@
         <option value="$PROJECT_DIR$/App/Model/Entrada.php" />
         <option value="$PROJECT_DIR$/App/DAO/EntradaDAO.php" />
         <option value="$PROJECT_DIR$/view/login.php" />
-        <option value="$PROJECT_DIR$/view/entrada.php" />
         <option value="$PROJECT_DIR$/App/DAO/UsuarioDAO.php" />
+        <option value="$PROJECT_DIR$/App/Helper/Senha.php" />
+        <option value="$PROJECT_DIR$/view/entrada.php" />
       </list>
     </option>
   </component>
@@ -139,7 +125,29 @@
             <path>
               <item name="projeto-apresentacao" type="b2602c69:ProjectViewProjectNode" />
               <item name="projeto-apresentacao" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="projeto-apresentacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projeto-apresentacao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DAO" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="projeto-apresentacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projeto-apresentacao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Helper" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="projeto-apresentacao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projeto-apresentacao" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="App" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> b46dfbf0d764f9e5353a7d9cd0929fd6dfae68cb
             </path>
             <path>
               <item name="projeto-apresentacao" type="b2602c69:ProjectViewProjectNode" />
@@ -191,12 +199,17 @@
       <workItem from="1520901570857" duration="326000" />
 =======
       <workItem from="1520553490907" duration="7405000" />
+<<<<<<< HEAD
       <workItem from="1520897416507" duration="3804000" />
 >>>>>>> bde1e6a41924fd3a3e88f6a62e2c039e42da0087
+=======
+      <workItem from="1520897416507" duration="9004000" />
+>>>>>>> b46dfbf0d764f9e5353a7d9cd0929fd6dfae68cb
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="8099000" />
   </component>
@@ -204,6 +217,9 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
 =======
     <option name="totallyTimeSpent" value="11209000" />
+=======
+    <option name="totallyTimeSpent" value="16409000" />
+>>>>>>> b46dfbf0d764f9e5353a7d9cd0929fd6dfae68cb
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -345,14 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Model/Entrada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/DAO/EntradaDAO.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -370,20 +378,41 @@
     <entry file="file://$PROJECT_DIR$/view/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding />
 >>>>>>> bde1e6a41924fd3a3e88f6a62e2c039e42da0087
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/entrada.php">
+    <entry file="file://$PROJECT_DIR$/App/Helper/Moeda.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
 =======
         <state relative-caret-position="51">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Helper/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Helper/Senha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+>>>>>>> b46dfbf0d764f9e5353a7d9cd0929fd6dfae68cb
           <folding />
 >>>>>>> bde1e6a41924fd3a3e88f6a62e2c039e42da0087
         </state>
@@ -391,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/DAO/UsuarioDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="544">
+          <caret line="37" column="38" lean-forward="true" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
           <folding>
 <<<<<<< HEAD
             <marker date="1520898764658" expanded="true" signature="211:321" ph="insert into entrada... " />
@@ -408,6 +437,25 @@
         <state relative-caret-position="1003">
           <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Model/Entrada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/entrada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <marker date="1520907110942" expanded="true" signature="1463:1483" ph="..." />
+            <marker date="1520907110942" expanded="true" signature="1652:1672" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

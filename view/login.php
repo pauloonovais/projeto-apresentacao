@@ -1,28 +1,30 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="../css/login.css " rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../js/login.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Estoque</h1>
-            <div class="account-wall">
-                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-                     alt="">
-                <form class="form-signin">
-                    <input type="text" class="form-control" placeholder="Email" required autofocus>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                        Sign in</button>
-                    <label class="checkbox pull-left">
-                        <input type="checkbox" value="remember-me">
-                        Remember me
-                    </label>
-                    <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                </form>
+    <div class="card card-container">
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Endereço e-mail" required autofocus>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+            <div id="remember" class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Relembre-me
+                </label>
             </div>
-            <a href="#" class="text-center new-account">Create an account </a>
-        </div>
-    </div>
-</div></div><!-- /container -->
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
+        </form><!-- /form -->
+
+    </div><!-- /card-container -->
+</div><!-- /container -->
