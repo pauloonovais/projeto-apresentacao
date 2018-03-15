@@ -1,7 +1,5 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="../css/login.css " rel="stylesheet">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="../js/login.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
@@ -32,7 +30,7 @@
         <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
         <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form class="login.php" method="post>
+        <form action="login.php" method="post">
             <span id="reauth-email" class="reauth-email"> </span>
             <input type="email" id="email" name="email" class="form-control" placeholder="Endereço e-mail" required autofocus>
             <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
