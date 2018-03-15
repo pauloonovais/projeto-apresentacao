@@ -23,12 +23,11 @@ if ($_POST) {
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
 ?>
-<form action="entrada.php" method="post">
-
-    <div class=\"form-group\">
+<form action="/entrada.php" method="post">
+    <div class="form-group">
         <label for="descricao_produto">Descrição do produto</label>
-        <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" required>
-      </div>
+        <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" autofocus required>
+    </div>
     <div class="form-group">
         <label for="fornecedor">Fornecedor</label>
         <input type="text" id="fornecedor" name="fornecedor" class="form-control" required>
@@ -60,5 +59,6 @@ if ($_POST) {
 
     <br>
     <button type="submit" class="btn btn-success">Cadastrar produto</button>
+    <button type="reset" class="btn btn-danger">Cancelar</button>
 </form>
 <?php include 'rodape.php';?>
