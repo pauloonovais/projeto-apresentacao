@@ -11,6 +11,7 @@
 
     <?php
     if ($_POST){
+
         include '../vendor/autoload.php';
         $u = new \App\Model\Usuario();
         $u->setEmail($_POST['email']);
@@ -19,7 +20,7 @@
         if ($uDAO->login($u))
             header("Location: entrada.php");
         else
-            echo "<div class='alert alert-danger'>E-mail ou senha incorretos!</div>";
+           echo "<div class='alert alert-danger'>E-mail ou senha incorretos!</div>";
     }
     ?>
 
