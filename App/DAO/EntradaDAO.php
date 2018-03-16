@@ -16,7 +16,6 @@ class EntradaDAO extends Conexao
         $sql = "insert into entrada (id, data_entrada, quantidade, valor, total, fornecedor, descricao_produto, tipo_unitario)";
         try{
             $i = $this->conexao->prepare($sql);
-            $i->bindValue(":id", $produto->getId());
             $i->bindValue(":data_entrada", $produto->getData_entrada());
             $i->bindValue(":quantidade", $produto->getQuantidade());
             $i->bindValue(":valor", $produto->getValor());

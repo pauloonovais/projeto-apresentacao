@@ -18,12 +18,12 @@ if ($_POST) {
 
 
 
-    $pDAO = new \App\DAO\ProdutoDAO();
+    $pDAO = new \App\DAO\EntradaDAO();
     if ($pDAO->inserir($p))
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
 ?>
-<form action="/entrada.php" method="post">
+<form action="entrada.php" method="post">
     <div class="form-group">
         <label for="descricao_produto">Descrição do produto</label>
         <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" autofocus required>
