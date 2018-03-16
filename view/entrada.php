@@ -41,7 +41,7 @@ include 'cabecalho.php';?>
         <input type="number" id="quantidade" name="quantidade" class="form-control" required>
     </div>
     <div class="form-group">
-        <label for="quantidade">Data de entrada</label>
+        <label for="data_entrada">Data de entrada</label>
         <input type="date" id="data_entrada" name="data_entrada" class="form-control" required>
     </div>
     <div class="form-group">
@@ -50,11 +50,10 @@ include 'cabecalho.php';?>
     </div>
     <div class="form-group">
         <label for="total">Valor Total</label>
-        <input type="text" id="total" name="total" class="form-control">
+        <input type="text" id="total" name="total" class="form-control" required>
     </div>
 
     <br>
     <button type="submit" class="btn btn-success">Cadastrar produto</button>
-    <button type="reset" class="btn btn-danger">Cancelar</button>
 </form>
 <?php include 'rodape.php';?>
