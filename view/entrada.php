@@ -3,27 +3,23 @@ $titulo = "Entrada de produtos";
 include 'cabecalho.php';?>
     <h1>Entrada de produtos</h1>
 <?php
-        include '../vendor/autoload.php';
-if ($_POST) {
-    $p = new \App\Model\Entrada();
-    $p->setDescricaoProduto($_POST['descricao_produto']);
-    $p->setFornecedor($_POST['fornecedor']);
-    $p->setTipoUnitario($_POST['tipo_unitario']);
-    $p->setQuantidade($_POST['quantidade']);
-    $p->setDataEntrada($_POST['data_entrada']);
-    $p->setValor($_POST['valor']);
-    $p->setTotal($_POST['total']);
+    include '../vendor/autoload.php';
+    if ($_POST) {
+        $p = new \App\Model\Entrada();
+        $p->setDescricaoProduto($_POST['descricao_produto']);
+        $p->setFornecedor($_POST['fornecedor']);
+        $p->setTipoUnitario($_POST['tipo_unitario']);
+        $p->setQuantidade($_POST['quantidade']);
+        $p->setDataEntrada($_POST['data_entrada']);
+        $p->setValor($_POST['valor']);
+        $p->setTotal($_POST['total']);
 
-
-
-
-
-    $pDAO = new \App\DAO\ProdutoDAO();
-    if ($pDAO->inserir($p))
+        $pDAO = new \App\DAO\EntradaDAO();
+        if ($pDAO->inserir($p))
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
 ?>
-<form action="/entrada.php" method="post">
+<form action="entrada.php" method="post">
     <div class="form-group">
         <label for="descricao_produto">Descrição do produto</label>
         <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" autofocus required>
