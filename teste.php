@@ -7,3 +7,4 @@
  */
 $a = "admin";
 echo md5($a);
+

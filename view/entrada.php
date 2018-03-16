@@ -3,16 +3,17 @@ $titulo = "Entrada de produtos";
 include 'cabecalho.php';?>
     <h1>Entrada de produtos</h1>
 <?php
-        include '../vendor/autoload.php';
-if ($_POST) {
-    $p = new \App\Model\Entrada();
-    $p->setDescricaoProduto($_POST['descricao_produto']);
-    $p->setFornecedor($_POST['fornecedor']);
-    $p->setTipoUnitario($_POST['tipo_unitario']);
-    $p->setQuantidade($_POST['quantidade']);
-    $p->setDataEntrada($_POST['data_entrada']);
-    $p->setValor($_POST['valor']);
-    $p->setTotal($_POST['total']);
+    include '../vendor/autoload.php';
+    if ($_POST) {
+        $p = new \App\Model\Entrada();
+        $p->setDescricaoProduto($_POST['descricao_produto']);
+        $p->setFornecedor($_POST['fornecedor']);
+        $p->setTipoUnitario($_POST['tipo_unitario']);
+        $p->setQuantidade($_POST['quantidade']);
+        $p->setDataEntrada($_POST['data_entrada']);
+        $p->setValor($_POST['valor']);
+        $p->setTotal($_POST['total']);
+
 
 
 
@@ -20,6 +21,10 @@ if ($_POST) {
 
     $pDAO = new \App\DAO\EntradaDAO();
     if ($pDAO->inserir($p))
+
+        $pDAO = new \App\DAO\EntradaDAO();
+        if ($pDAO->inserir($p))
+
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
 ?>
@@ -50,7 +55,7 @@ if ($_POST) {
     </div>
     <div class="form-group">
         <label for="valor">Valor Unitário</label>
-        <input type="text" id="valor" name="valor" class="form-control" required>
+        <input type="text" id="valor" name="valor" class="form-control" required onblur="calcular()>
     </div>
     <div class="form-group">
         <label for="total">Valor Total</label>
@@ -60,5 +65,16 @@ if ($_POST) {
     <br>
     <button type="submit" class="btn btn-success">Cadastrar produto</button>
     <button type="reset" class="btn btn-danger">Cancelar</button>
+    <script>
+
+
 </form>
+<script>
+        function calcular() {
+            var n1 = parseInt(document.getElementById('quantidade')value,10);
+            var n2 = parseInt(document.getElementById('valor')value,10);
+            document.getElementById('total').innerHTML = n1 + n2;
+        }
+
+ </script>
 <?php include 'rodape.php';?>
