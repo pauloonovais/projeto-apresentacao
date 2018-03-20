@@ -14,6 +14,7 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a href="entrada.php" class="nav-link">Entrada</a></li>
             <li class="nav-item"><a href="saida.php" class="nav-link">Saída</a></li>
+            <li class="nav-item"><a href="estoque.php" class="nav-link">Estoque</a></li>
         </ul>
     </div>
     <a class="navbar-brand" href="logoff.php">Sair</a>
