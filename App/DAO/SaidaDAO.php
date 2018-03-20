@@ -13,15 +13,16 @@ class SaidaDAO extends Conexao
 {
     public function alterar($produto)
     {
-        $sql = "update entrada set quantidade=:quantidade where descricao_produto=:descricao_produto";
+        $sql = "update entrada set quantidade=quantidade-:quantidade where descricao_produto=:descricao_produto";
         try{
             $a = $this->conexao->prepare($sql);
             $a->bindValue(":quantidade", $produto->getQuantidade());
+            $a->bindValue("descricao_produto", $produto->getDescricaoProduto());
             $a->execute();
 
             return true;
         } catch (\PDOException $e){
-            echo "<div class='alert alert-danger'> {$e->getMessage()} </div>";
+            echo "<div class='alert alert-danger'> ($e->getMessage()) </div>";
         }
     }
 }
