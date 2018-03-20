@@ -7,6 +7,9 @@
     you can substitue the span of reauth email for a input with the email and
     include the remember me checkbox
     -->
+
+
+
 <div class="container">
 
     <?php
@@ -24,7 +27,6 @@
     }
     ?>
 
-</div>
 
 
     <div class="card card-container">
@@ -42,6 +44,9 @@
             </div>
             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
         </form><!-- /form -->
+
+
+    </div>
 
     </div><!-- /card-container -->
 
