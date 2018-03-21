@@ -27,6 +27,9 @@ include 'cabecalho.php';?>
 
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
+include '../vendor/autoload.php';
+$uDAO = new \App\DAO\UsuarioDAO();
+$uDAO->verificar();
 ?>
 <form action="entrada.php" method="post">
     <div class="form-group">

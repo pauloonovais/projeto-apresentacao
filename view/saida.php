@@ -15,7 +15,12 @@ if ($_POST) {
     if ($pDAO->alterar($a))
         echo "<div class='alert alert-success'>Venda efetuada com sucesso!</div>";
 }
+include '../vendor/autoload.php';
+$uDAO = new \App\DAO\UsuarioDAO();
+$uDAO->verificar();
 ?>
+
+
     <form action="saida.php" method="post">
         <div class="form-group">
             <label for="descricao_produto">Descrição do produto</label>
