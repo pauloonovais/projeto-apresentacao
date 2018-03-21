@@ -32,4 +32,24 @@ class EntradaDAO extends Conexao
             echo "<div class='alert alert-danger'>($e->getMessage())</div>";
         }
     }
+    public function pesquisar($produto = null)
+    {
+        $sql = "select id, descricao_produto, quantidade, valor from entrada";
+        try {
+
+            $p = $this->conexao->prepare($sql);
+            $p->bindValue(":descricao_produto", $produto->getDescricaoProduto());
+            $p->bindValue(":quantidade", $produto->getQuantidade());
+            $p->bindValue(":valor", $produto->getValor());
+            $p->bindValue(":id", $produto->getId());
+            $p->execute();
+            return $p->fetchAll(\PDO::FETCH_CLASS, "\App\Model\Entrada");
+
+
+        } catch (\PDOException $e) {
+            echo "<div class='alert alert-danger'>($e->gerMessage()}</div>div>";
+
+
+        }
+    }
 }

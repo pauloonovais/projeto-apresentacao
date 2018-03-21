@@ -16,10 +16,19 @@ include 'cabecalho.php';?>
     </form>
 <?php
 include '../vendor/autoload.php';
-$uDAO = new \App\DAO\UsuarioDAO();
-$uDAO->verificar();
+//$uDAO = new \App\DAO\UsuarioDAO();
+//$uDAO->verificar();
 
 ?>
+<?php
+    $p = new \App\Model\Entrada();
+    isset($_GET['descricao'])? $p->setDescricaoProduto($_GET['descricao']): $p->setDescricaoProduto("");
+
+    $pDAO = new \App\DAO\EntradaDAO();
+    $produtos = $pDAO->pesquisar($p);
+    if(count($produtos)>0){
+
+    ?>
 
     <table class='table table-striped table-hover'>
         <tr class='text-center'>
@@ -30,7 +39,22 @@ $uDAO->verificar();
             <th></th>
             <th></th>
         </tr>
+        <?php
+        foreach ($produtos as $produto){
+            echo "<tr class='text-center'>";
+            echo "<td>{$produto->getId()}</td>";
+            echo "<td class='text-center'>{$produto->getDescricaoProduto()}</td>";
+            echo "<td>{$produto->getQuantidade()}</td>";
+            echo "<td>{$produto->getValor()}</td>";
+            echo "</tr>";
+        }
+        ?>
     </table>
+<?php
 
+    }else{
+        echo "<div class='alert alert-danger'>Não existem produtos com a pesquisa informada!</div>";
+    }
+  ?>
 
 <?php include 'rodape.php';?>
