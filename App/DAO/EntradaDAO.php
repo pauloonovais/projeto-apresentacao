@@ -53,6 +53,7 @@ class EntradaDAO extends Conexao
 
         }
     }
+<<<<<<< HEAD
 
     public function pesquisarUm($produto = null)
     {
@@ -69,5 +70,21 @@ class EntradaDAO extends Conexao
 
 
         }
+=======
+    public function excluir($produto)
+    {
+        $sql = "delete from produtos where id = :id";
+        try {
+            $i = $this->conexao->prepare($sql);
+            $i->bindValue("id", $produto->getId());
+
+            $i->execute();
+            return true;
+        } catch (\PDOException $e) {
+            echo "<div class='alert alert-danger'>{$e->getMessage()}<\div>";
+
+        }
+
+>>>>>>> 44dacd9490198a39118302162ea39870f8701329
     }
 }

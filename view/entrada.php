@@ -58,7 +58,7 @@ $uDAO->verificar();
     </div>
     <div class="form-group">
         <label for="valor">Valor Unitário</label>
-        <input type="text" id="valor" name="valor" class="form-control" required onblur="calcular()">
+        <input type="text" id="valor" name="valor" class="form-control" required>
     </div>
     <div class="form-group">
         <label for="total">Valor Total</label>
@@ -67,10 +67,6 @@ $uDAO->verificar();
 
     <br>
     <button type="submit" class="btn btn-success">Cadastrar produto</button>
-
-    <button type="reset" class="btn btn-danger">Cancelar</button>
-    <script>
-
 
 
 </form>
