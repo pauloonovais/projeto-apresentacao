@@ -1,7 +1,7 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="../css/login.css " rel="stylesheet">
 <script src="../js/login.js"></script>
-<<<<<<< HEAD
+
 <!--
     you can substitue the span of reauth email for a input with the email and
     include the remember me checkbox
@@ -10,12 +10,8 @@
 
 
 
-=======
 
 
-
-
->>>>>>> 44dacd9490198a39118302162ea39870f8701329
 <div class="container">
 
     <?php
@@ -50,14 +46,13 @@
 
     </div>
 
-<<<<<<< HEAD
+
     </div><!-- /card-container -->
 
     </div>
-=======
     </div>
     </div>
 
->>>>>>> 44dacd9490198a39118302162ea39870f8701329
+
 
 

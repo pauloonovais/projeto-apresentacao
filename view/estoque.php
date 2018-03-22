@@ -14,11 +14,9 @@ include 'cabecalho.php';?>
             Pesquisar
         </button>
     </form>
-<<<<<<< HEAD
-<!--<-->
-=======
 
->>>>>>> 44dacd9490198a39118302162ea39870f8701329
+<!--<-->
+
 <?php
 $um = new \App\Model\Entrada();
 
