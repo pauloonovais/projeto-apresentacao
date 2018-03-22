@@ -14,10 +14,11 @@ include 'cabecalho.php';?>
             Pesquisar
         </button>
     </form>
+
 <?php
 include '../vendor/autoload.php';
-//$uDAO = new \App\DAO\UsuarioDAO();
-//$uDAO->verificar();
+$uDAO = new \App\DAO\UsuarioDAO();
+$uDAO->verificar();
 
 ?>
 <?php
@@ -37,7 +38,6 @@ include '../vendor/autoload.php';
             <th>Quantidade</th>
             <th>Valor</th>
             <th></th>
-            <th></th>
         </tr>
         <?php
         foreach ($produtos as $produto){
@@ -46,9 +46,11 @@ include '../vendor/autoload.php';
             echo "<td class='text-center'>{$produto->getDescricaoProduto()}</td>";
             echo "<td>{$produto->getQuantidade()}</td>";
             echo "<td>{$produto->getValor()}</td>";
+            echo "<td><button type=\"button\" class=\"btn btn-danger\">Excluir</button></td>";
             echo "</tr>";
         }
         ?>
+
     </table>
 <?php
 

@@ -52,4 +52,19 @@ class EntradaDAO extends Conexao
 
         }
     }
+    public function excluir($produto)
+    {
+        $sql = "delete from produtos where id = :id";
+        try {
+            $i = $this->conexao->prepare($sql);
+            $i->bindValue("id", $produto->getId());
+
+            $i->execute();
+            return true;
+        } catch (\PDOException $e) {
+            echo "<div class='alert alert-danger'>{$e->getMessage()}<\div>";
+
+        }
+
+    }
 }

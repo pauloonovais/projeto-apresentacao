@@ -2,16 +2,9 @@
 <link href="../css/login.css " rel="stylesheet">
 <script src="../js/login.js"></script>
 
-<<<<<<< HEAD
-<!--
-    you can substitue the span of reauth email for a input with the email and
-    include the remember me checkbox
-    -->
 
 
 
-=======
->>>>>>> 69a2dbdb9d1f9c020f742c25b58ee65df17fc58b
 <div class="container">
 
     <?php
@@ -43,13 +36,11 @@
             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
         </form>
 
-<<<<<<< HEAD
 
     </div>
 
-    </div><!-- /card-container -->
-=======
     </div>
->>>>>>> 69a2dbdb9d1f9c020f742c25b58ee65df17fc58b
+    </div>
+
 
 
