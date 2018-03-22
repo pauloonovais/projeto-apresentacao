@@ -14,7 +14,11 @@ include 'cabecalho.php';?>
             Pesquisar
         </button>
     </form>
+<!--<-->
 <?php
+$um = new \App\Model\Entrada();
+
+?>
 include '../vendor/autoload.php';
 //$uDAO = new \App\DAO\UsuarioDAO();
 //$uDAO->verificar();
@@ -22,8 +26,7 @@ include '../vendor/autoload.php';
 ?>
 <?php
     $p = new \App\Model\Entrada();
-    isset($_GET['descricao'])? $p->setDescricaoProduto($_GET['descricao']): $p->setDescricaoProduto("");
-
+    isset($_GET['descricao_produto'])? $p->setDescricaoProduto($_GET['descricao_produto']): $p->setDescricaoProduto("");
     $pDAO = new \App\DAO\EntradaDAO();
     $produtos = $pDAO->pesquisar($p);
     if(count($produtos)>0){

@@ -1,8 +1,6 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="../css/login.css " rel="stylesheet">
 <script src="../js/login.js"></script>
-
-<<<<<<< HEAD
 <!--
     you can substitue the span of reauth email for a input with the email and
     include the remember me checkbox
@@ -10,8 +8,7 @@
 
 
 
-=======
->>>>>>> 69a2dbdb9d1f9c020f742c25b58ee65df17fc58b
+
 <div class="container">
 
     <?php
@@ -37,19 +34,17 @@
         <form action="login.php" method="post">
             <span id="reauth-email" class="reauth-email"> </span>
             <input type="email" id="email" name="email" class="form-control" placeholder="Endereço e-mail" required autofocus>
-            <br>
+            
             <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
             <br>
             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
         </form>
 
-<<<<<<< HEAD
 
     </div>
 
     </div><!-- /card-container -->
-=======
+
     </div>
->>>>>>> 69a2dbdb9d1f9c020f742c25b58ee65df17fc58b
 
 

@@ -14,7 +14,7 @@ class EntradaDAO extends Conexao
     public function inserir($produto)
     {
         $sql = "insert into entrada (descricao_produto, fornecedor, tipo_unitario, quantidade, data_entrada, valor, total) VALUES (:descricao_produto, :fornecedor, :tipo_unitario, :quantidade, :data_entrada, :valor, :total)";
-        try{
+        try {
             $i = $this->conexao->prepare($sql);
 
             $i->bindValue(":data_entrada", $produto->getDataEntrada());
@@ -32,6 +32,7 @@ class EntradaDAO extends Conexao
             echo "<div class='alert alert-danger'>($e->getMessage())</div>";
         }
     }
+
     public function pesquisar($produto = null)
     {
         $sql = "select id, descricao_produto, quantidade, valor from entrada";
@@ -44,6 +45,23 @@ class EntradaDAO extends Conexao
             $p->bindValue(":id", $produto->getId());
             $p->execute();
             return $p->fetchAll(\PDO::FETCH_CLASS, "\App\Model\Entrada");
+
+
+        } catch (\PDOException $e) {
+            echo "<div class='alert alert-danger'>($e->gerMessage()}</div>div>";
+
+
+        }
+    }
+
+    public function pesquisarUm($produto = null)
+    {
+        $sql = "select * from produtos WHERE descricao LIKE  :descricao";
+        try {
+            $i = $this->conexao->prepare($sql);
+            $i->bindValue(":descricao", "%" . $produto->getDescricao() . "%");
+            $i->execute();
+            return $i->fetchAll(\PDO::FETCH_CLASS, "\App\model\Produto");
 
 
         } catch (\PDOException $e) {
