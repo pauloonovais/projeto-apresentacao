@@ -1,6 +1,7 @@
 <?php
 $titulo = "Alterar";
 include 'cabecalho.php';?>
+<h1>Alterar senha de usuário</h1>
 
 <?php
 include '../vendor/autoload.php';
@@ -14,23 +15,16 @@ if ($_POST){
 
     $pDAO = new \App\DAO\UsuarioDAO();
     if ($pDAO->alterarUsuario($p))
-        echo "<div class='alert alert-success'> Usuario alterado com sucesso!</div>";
+        echo "<div class='alert alert-success'> Usuário alterado com sucesso!</div>";
 
 }
 $us = new \App\Model\Usuario();
 $us->setId($_SESSION['id']);
 $usDAO = new \App\DAO\UsuarioDAO();
 $r= $usDAO->consulta($us);
-execu
 
 ?>
-
-
     <form action="alterarUsuario.php" method="post">
-        <div class="form-group">
-            <label for="id">Id</label>
-            <input value="<?php echo $r['id']?>" type="number" id="id" name="id" class="form-control" readonly autofocus required>
-        </div>
         <div class="form-group">
             <label for="email">Email</label>
             <input value="<?php echo $r['email']?>" type="text" id="email" name="email" class="form-control" autofocus required>
