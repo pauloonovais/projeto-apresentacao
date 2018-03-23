@@ -21,7 +21,7 @@ $us = new \App\Model\Usuario();
 $us->setId($_SESSION['id']);
 $usDAO = new \App\DAO\UsuarioDAO();
 $r= $usDAO->consulta($us);
-execu
+
 
 ?>
 
