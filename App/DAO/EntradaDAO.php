@@ -75,7 +75,7 @@ class EntradaDAO extends Conexao
         public
         function excluir($produto)
         {
-            $sql = "delete from produtos where id = :id";
+            $sql = "delete from entrada where id = :id";
             try {
                 $i = $this->conexao->prepare($sql);
                 $i->bindValue("id", $produto->getId());
