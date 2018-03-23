@@ -15,16 +15,29 @@ include 'cabecalho.php';?>
         </button>
     </form>
 
+<!--<-->
+
 <?php
+
+
+
 include '../vendor/autoload.php';
 $uDAO = new \App\DAO\UsuarioDAO();
 $uDAO->verificar();
 
 ?>
-<?php
-    $p = new \App\Model\Entrada();
-    isset($_GET['descricao'])? $p->setDescricaoProduto($_GET['descricao']): $p->setDescricaoProduto("");
 
+<?php
+
+if(isset($_GET['msg'])&& $_GET['msg']==1)
+    echo "<div class='alert alert-success'>Produto Excluido com sucesso</div>";
+
+if(isset($_GET['msg'])&& $_GET['msg']==2)
+    echo "<div class='alert alert-success'>Produto Alterado com sucesso</div>";
+
+
+    $p = new \App\Model\Entrada();
+    isset($_GET['descricao_produto'])? $p->setDescricaoProduto($_GET['descricao_produto']): $p->setDescricaoProduto("");
     $pDAO = new \App\DAO\EntradaDAO();
     $produtos = $pDAO->pesquisar($p);
     if(count($produtos)>0){
@@ -46,7 +59,7 @@ $uDAO->verificar();
             echo "<td class='text-center'>{$produto->getDescricaoProduto()}</td>";
             echo "<td>{$produto->getQuantidade()}</td>";
             echo "<td>{$produto->getValor()}</td>";
-            echo "<td><button type=\"button\" class=\"btn btn-danger\">Excluir</button></td>";
+            echo "<td><a class='btn btn-danger' href='excluir.php?id={$produto->getId()}'>Excluir</a> </td>";
             echo "</tr>";
         }
         ?>

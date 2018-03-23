@@ -2,6 +2,13 @@
 <link href="../css/login.css " rel="stylesheet">
 <script src="../js/login.js"></script>
 
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+
+
+
 
 
 
@@ -30,7 +37,7 @@
         <form action="login.php" method="post">
             <span id="reauth-email" class="reauth-email"> </span>
             <input type="email" id="email" name="email" class="form-control" placeholder="Endereço e-mail" required autofocus>
-            <br>
+            
             <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
             <br>
             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
@@ -39,8 +46,13 @@
 
     </div>
 
+
+    </div><!-- /card-container -->
+
     </div>
     </div>
+    </div>
+
 
 
 
