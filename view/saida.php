@@ -24,7 +24,7 @@ $uDAO->verificar();
     <form action="saida.php" method="post">
         <div class="form-group">
             <label for="descricao_produto">Descrição do produto</label>
-            <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" autofocus required>
+            <input type="text" id="descricao_produto" name="descricao_produto" class="form-control" autofocus required  onkeyup="consulta(this.value);">
         </div>
         <div class="form-group">
             <label for="quantidade">Quantidade</label>
@@ -42,4 +42,23 @@ $uDAO->verificar();
         <br>
         <button type="submit" class="btn btn-success">Vender produto</button>
     </form>
+    <span id="tabela"></span>
+    <script>
+        function consulta(valor){
+            if(valor=="") {
+               document.getElementById("tabela").innerHTML="<h1>Preencha o campo</h1>";
+               return false;
+            }else {
+                var xml= new XMLHttpRequest();
+                xml.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200){
+                        document.getElementById("tabela").innerHTML = this.responseText;
+                    }
+                };
+                xml.open("GET","consulta_ajax.php?descricao="+valor,true);
+                xml.send();
+            }
+        }
+    </script>
+
 <?php include 'rodape.php';?>

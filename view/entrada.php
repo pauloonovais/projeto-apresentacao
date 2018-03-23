@@ -16,20 +16,15 @@ include 'cabecalho.php';?>
 
 
 
-
-
-
     $pDAO = new \App\DAO\EntradaDAO();
     if ($pDAO->inserir($p))
-
-        $pDAO = new \App\DAO\EntradaDAO();
-        if ($pDAO->inserir($p))
-
         echo "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
 }
 include '../vendor/autoload.php';
 $uDAO = new \App\DAO\UsuarioDAO();
 $uDAO->verificar();
+
+
 ?>
 <form action="entrada.php" method="post">
     <div class="form-group">
@@ -58,11 +53,11 @@ $uDAO->verificar();
     </div>
     <div class="form-group">
         <label for="valor">Valor Unitário</label>
-        <input type="text" id="valor" name="valor" class="form-control" required>
+        <input type="text" id="valor" name="valor" class="form-control" required onchange="somar();">
     </div>
     <div class="form-group">
         <label for="total">Valor Total</label>
-        <input type="text" id="total" name="total" class="form-control" required>
+        <input type="text" id="total" name="total" class="form-control" required readonly>
     </div>
 
     <br>
@@ -70,5 +65,15 @@ $uDAO->verificar();
 
 
 </form>
+<script>
+    function somar(){
 
+      var valor=document.getElementById("valor").value;
+      var quant=document.getElementById("quantidade").value;
+      var campo =document.getElementById("total");
+      campo.value=valor*quant;
+    }
+
+
+</script>
 <?php include 'rodape.php';?>

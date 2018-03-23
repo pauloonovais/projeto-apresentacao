@@ -89,5 +89,23 @@ class EntradaDAO extends Conexao
 
 
         }
+    public function pesquisar_ajax($produto = null)
+    {
+        $sql = "select * from entrada WHERE descricao_produto LIKE :desc";
+        try {
+
+            $p = $this->conexao->prepare($sql);
+            $p->bindValue(":desc", "%".$produto->getDescricaoProduto()."%");
+            $p->execute();
+            $l= $p->fetchAll(\PDO::FETCH_ASSOC);
+            return $l;
+
+
+        } catch (\PDOException $e) {
+            echo "<div class='alert alert-danger'>($e->gerMessage()}</div>div>";
+
+
+        }
+    }
 
     }

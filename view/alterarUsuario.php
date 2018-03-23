@@ -26,6 +26,10 @@ $r= $usDAO->consulta($us);
 ?>
     <form action="alterarUsuario.php" method="post">
         <div class="form-group">
+            <label for="id">Id</label>
+            <input value="<?php echo $r['id']?>" type="number" id="id" name="id" class="form-control" readonly autofocus required>
+        </div>
+        <div class="form-group">
             <label for="email">Email</label>
             <input value="<?php echo $r['email']?>" type="text" id="email" name="email" class="form-control" autofocus required>
         </div>

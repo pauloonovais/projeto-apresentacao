@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <!--<link rel="stylesheet" href="../assets/css/estilo.css">-->
     <title><?php echo $titulo; ?></title>
 </head>
 <body>
