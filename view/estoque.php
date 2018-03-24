@@ -51,6 +51,7 @@ if(isset($_GET['msg'])&& $_GET['msg']==2)
             <th>Quantidade</th>
             <th>Valor</th>
             <th></th>
+            <th></th>
         </tr>
         <?php
         foreach ($produtos as $produto){
@@ -59,6 +60,7 @@ if(isset($_GET['msg'])&& $_GET['msg']==2)
             echo "<td class='text-center'>{$produto->getDescricaoProduto()}</td>";
             echo "<td>{$produto->getQuantidade()}</td>";
             echo "<td>{$produto->getValor()}</td>";
+            echo "<td><a class='btn btn-warning'>Alterar</a> </td>";
             echo "<td><a class='btn btn-danger' href='excluir.php?id={$produto->getId()}'>Excluir</a> </td>";
             echo "</tr>";
         }

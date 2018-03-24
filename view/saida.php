@@ -32,11 +32,11 @@ $uDAO->verificar();
         </div>
         <div class="form-group">
             <label for="valor">Valor Unitário</label>
-            <input type="text" id="valor" name="valor" class="form-control" required>
+            <input type="text" id="valor" name="valor" class="form-control" required onchange="somar();">
         </div>
         <div class="form-group">
             <label for="total">Valor Total</label>
-            <input type="text" id="total" name="total" class="form-control" required>
+            <input type="text" id="total" name="total" class="form-control" required readonly>
         </div>
 
         <br>
@@ -46,7 +46,7 @@ $uDAO->verificar();
     <script>
         function consulta(valor){
             if(valor=="") {
-               document.getElementById("tabela").innerHTML="<h1>Preencha o campo</h1>";
+               document.getElementById("tabela").innerHTML="<h1></h1>";
                return false;
             }else {
                 var xml= new XMLHttpRequest();
@@ -59,6 +59,18 @@ $uDAO->verificar();
                 xml.send();
             }
         }
+    </script>
+
+    <script>
+        function somar(){
+
+            var valor=document.getElementById("valor").value;
+            var quant=document.getElementById("quantidade").value;
+            var campo =document.getElementById("total");
+            campo.value=valor*quant;
+        }
+
+
     </script>
 
 <?php include 'rodape.php';?>
